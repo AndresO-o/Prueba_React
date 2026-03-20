@@ -1,0 +1,152 @@
+/* ── Trigger button ── */
+.resumen-trigger-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.25rem;
+}
+
+.resumen-trigger-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 0.75rem 1.4rem;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 4px 20px rgba(109, 40, 217, 0.35);
+}
+
+.resumen-trigger-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.resumen-trigger-btn:disabled {
+  background: rgba(255,255,255,0.06);
+  color: #4b3e6e;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.trigger-count {
+  background: rgba(255,255,255,0.2);
+  border-radius: 20px;
+  font-size: 0.72rem;
+  padding: 0.1rem 0.5rem;
+}
+
+/* ── Modal ── */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 3, 12, 0.75);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-card {
+  width: 100%;
+  max-width: 480px;
+  background: rgba(12, 8, 24, 0.97);
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+
+/* Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.modal-title {
+  color: #fff;
+}
+
+/* Body */
+.curso-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+.modal-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.btn-confirm {
+  flex: 2;
+  background: #7c3aed;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 8px;
+}
+
+.btn-cancel {
+  flex: 1;
+}
+.modal-close-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #aaa;
+  font-size: 16px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+}
+
+.modal-close-btn:hover {
+  background: rgba(255, 0, 0, 0.1);
+  color: #ff6b6b;
+}
+.btn-cancel {
+  flex: 1;
+  padding: 0.78rem;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  color: #ccc;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-cancel:hover {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-confirm {
+  flex: 2;
+  padding: 0.78rem;
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}

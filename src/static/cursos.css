@@ -1,0 +1,297 @@
+
+        .cursos-section {
+          margin-bottom: 1.75rem;
+        }
+
+        .cursos-section-head {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 1rem;
+          margin-bottom: 1rem;
+          flex-wrap: wrap;
+        }
+
+        .cursos-section-title {
+          font-family: 'Playfair Display', serif;
+          font-size: 1rem;
+          font-weight: 600;
+          color: #d8b4fe;
+          margin: 0;
+          display: flex;
+          align-items: center;
+          gap: 0.6rem;
+        }
+
+        .cursos-section-title::before {
+          content: '';
+          display: inline-block;
+          width: 8px;
+          height: 8px;
+          background: #7c3aed;
+          border-radius: 50%;
+          box-shadow: 0 0 8px rgba(124,58,237,0.7);
+          flex-shrink: 0;
+        }
+
+        .creditos-badge {
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          background: rgba(124, 58, 237, 0.12);
+          border: 1px solid rgba(124, 58, 237, 0.28);
+          border-radius: 20px;
+          padding: 0.3rem 0.85rem;
+          font-size: 0.78rem;
+          color: #c4b5fd;
+          font-weight: 500;
+        }
+
+        .creditos-badge span {
+          font-weight: 700;
+          color: #a78bfa;
+        }
+
+        .cursos-card {
+          background: rgba(15, 10, 30, 0.75);
+          border: 1px solid rgba(124, 58, 237, 0.2);
+          border-radius: 16px;
+          overflow: hidden;
+          box-shadow: 0 4px 30px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.03);
+        }
+
+        .cursos-table-wrap {
+          overflow-x: auto;
+          -webkit-overflow-scrolling: touch;
+        }
+
+        .cursos-table {
+          width: 100%;
+          border-collapse: collapse;
+          font-size: 0.875rem;
+          min-width: 520px;
+        }
+
+        .cursos-table thead th {
+          padding: 0.85rem 1.25rem;
+          text-align: left;
+          font-weight: 500;
+          font-size: 0.7rem;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #9f7aea;
+          background: rgba(124, 58, 237, 0.06);
+          border-bottom: 1px solid rgba(124, 58, 237, 0.15);
+          white-space: nowrap;
+        }
+
+        .cursos-table thead th:last-child {
+          text-align: center;
+        }
+
+        .cursos-table tbody tr {
+          border-bottom: 1px solid rgba(255,255,255,0.04);
+          transition: background 0.15s ease;
+        }
+
+        .cursos-table tbody tr:last-child {
+          border-bottom: none;
+        }
+
+        .cursos-table tbody tr:hover {
+          background: rgba(124, 58, 237, 0.06);
+        }
+
+        .cursos-table tbody tr.seleccionado-row {
+          background: rgba(124, 58, 237, 0.09);
+        }
+
+        .cursos-table tbody tr.seleccionado-row:hover {
+          background: rgba(124, 58, 237, 0.13);
+        }
+
+        .cursos-table tbody td {
+          padding: 0.85rem 1.25rem;
+          color: #d4c5ef;
+          vertical-align: middle;
+        }
+
+        .curso-nombre {
+          font-weight: 500;
+          color: #e9e1f8;
+        }
+
+        .curso-codigo {
+          font-size: 0.75rem;
+          color: #7c6b9e;
+          margin-top: 0.15rem;
+        }
+
+        .creditos-num {
+          display: inline-block;
+          background: rgba(124, 58, 237, 0.12);
+          border: 1px solid rgba(124, 58, 237, 0.2);
+          color: #c4b5fd;
+          font-size: 0.78rem;
+          font-weight: 600;
+          padding: 0.2rem 0.55rem;
+          border-radius: 6px;
+        }
+
+        .cupos-pill {
+          display: inline-block;
+          font-size: 0.78rem;
+          font-weight: 600;
+          padding: 0.22rem 0.65rem;
+          border-radius: 20px;
+        }
+
+        .cupos-ok {
+          background: rgba(34,197,94,0.1);
+          border: 1px solid rgba(34,197,94,0.25);
+          color: #86efac;
+        }
+
+        .cupos-low {
+          background: rgba(234,179,8,0.1);
+          border: 1px solid rgba(234,179,8,0.25);
+          color: #fde68a;
+        }
+
+        .cupos-none {
+          background: rgba(239,68,68,0.1);
+          border: 1px solid rgba(239,68,68,0.25);
+          color: #fca5a5;
+        }
+
+        .semestre-chip {
+          display: inline-block;
+          font-size: 0.75rem;
+          color: #9f7aea;
+          background: rgba(124, 58, 237, 0.08);
+          border: 1px solid rgba(124, 58, 237, 0.15);
+          padding: 0.18rem 0.55rem;
+          border-radius: 6px;
+        }
+
+        .action-cell {
+          text-align: center;
+        }
+
+        .btn-agregar {
+          background: linear-gradient(135deg, #7c3aed, #6d28d9);
+          border: none;
+          border-radius: 8px;
+          color: #fff;
+          font-family: 'DM Sans', sans-serif;
+          font-size: 0.78rem;
+          font-weight: 500;
+          padding: 0.42rem 0.9rem;
+          cursor: pointer;
+          transition: opacity 0.2s, transform 0.15s, box-shadow 0.2s;
+          box-shadow: 0 2px 10px rgba(109,40,217,0.3);
+          white-space: nowrap;
+        }
+
+        .btn-agregar:hover {
+          opacity: 0.88;
+          transform: translateY(-1px);
+          box-shadow: 0 4px 16px rgba(109,40,217,0.4);
+        }
+
+        .btn-agregar:active { transform: translateY(0); }
+
+        .btn-quitar {
+          background: rgba(239,68,68,0.08);
+          border: 1px solid rgba(239,68,68,0.25);
+          border-radius: 8px;
+          color: #fca5a5;
+          font-family: 'DM Sans', sans-serif;
+          font-size: 0.78rem;
+          font-weight: 500;
+          padding: 0.38rem 0.9rem;
+          cursor: pointer;
+          transition: background 0.2s, transform 0.15s;
+          white-space: nowrap;
+        }
+
+        .btn-quitar:hover {
+          background: rgba(239,68,68,0.15);
+          transform: translateY(-1px);
+        }
+
+        .btn-quitar:active { transform: translateY(0); }
+
+        .btn-disabled {
+          background: rgba(255,255,255,0.04);
+          border: 1px solid rgba(255,255,255,0.08);
+          border-radius: 8px;
+          color: #4b3e6e;
+          font-family: 'DM Sans', sans-serif;
+          font-size: 0.78rem;
+          padding: 0.38rem 0.9rem;
+          cursor: not-allowed;
+          white-space: nowrap;
+        }
+
+        .selected-check {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.3rem;
+          font-size: 0.75rem;
+          color: #86efac;
+          background: rgba(34,197,94,0.08);
+          border: 1px solid rgba(34,197,94,0.2);
+          padding: 0.18rem 0.55rem;
+          border-radius: 20px;
+        }
+
+        /* Credits footer */
+        .cursos-footer {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 0.75rem;
+          padding: 0.85rem 1.25rem;
+          border-top: 1px solid rgba(124, 58, 237, 0.12);
+          background: rgba(124, 58, 237, 0.04);
+        }
+
+        .footer-label {
+          font-size: 0.78rem;
+          color: #7c6b9e;
+        }
+
+        .footer-credits {
+          font-size: 0.88rem;
+          font-weight: 700;
+          color: #c4b5fd;
+        }
+
+        .footer-max {
+          font-size: 0.75rem;
+          color: #4b3e6e;
+        }
+
+        .credits-bar-wrap {
+          flex: 1;
+          max-width: 160px;
+          height: 4px;
+          background: rgba(124,58,237,0.12);
+          border-radius: 4px;
+          overflow: hidden;
+        }
+
+        .credits-bar-fill {
+          height: 100%;
+          border-radius: 4px;
+          background: linear-gradient(90deg, #7c3aed, #a855f7);
+          transition: width 0.35s ease;
+        }
+
+        @media (max-width: 640px) {
+          .cursos-table thead th,
+          .cursos-table tbody td { padding: 0.75rem 0.9rem; }
+          .cursos-section-head { gap: 0.6rem; }
+        }
+      

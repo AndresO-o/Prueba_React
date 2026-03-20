@@ -1,0 +1,20 @@
+[
+  {
+    "id": "101",
+    "nombre": "Juan",
+    "apellido": "Pérez",
+    "password": "1234",
+    "carrera": "Ingeniería de Sistemas",
+    "semestre": 2,
+    "matriculado": true,
+    "creditosPermitidos": 20,
+    "rol": "estudiante"
+  },
+  {
+    "id": "999",
+    "nombre": "Admin",
+    "apellido": "Profesor",
+    "password": "admin",
+    "rol": "admin"
+  }
+]
