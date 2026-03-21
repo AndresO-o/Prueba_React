@@ -5,7 +5,7 @@ export function AdminView({ estudiantes, cursos }) {
     <div className="admin-wrapper">
       <header className="admin-header">
         <div className="admin-header-icon">🎓</div>
-        <h2 className="admin-title">Panel Profesor</h2>
+        <h2 className="admin-title">Panel Administracion</h2>
         <span className="admin-badge">Administrador</span>
       </header>
 

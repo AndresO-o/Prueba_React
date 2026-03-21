@@ -22,10 +22,6 @@ export function Formulario({ users, setUser }) {
 
   return (
     <div className="login-page">
-      {/* fondos */}
-      <div className="login-orb orb-1"></div>
-      <div className="login-orb orb-2"></div>
-
       <div className="login-card">
         <h2 className="login-heading">Login</h2>
         <p className="login-sub">Ingresa tus credenciales</p>
